@@ -11,6 +11,12 @@ The real remedy is to destroy the belief in the sanctity of the shastras. How do
 """
 with open("speech.txt","w") as f:
   f.write(speech_text)
+  from langchain_community.document_loaders import TextLoader
+from langchain_text_splitters import CharacterTextSplitter
+from langchain_community.embeddings import HuggingFaceEmbeddings
+from langchain_community.vectorstores import Chroma
+from langchain_community.llms import Ollama
+from langchain.chains import RetrievalQA
 loader= TextLoader("speech.txt")
 doc=loader.load()
 
