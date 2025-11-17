@@ -36,6 +36,17 @@ qa=RetrievalQA.from_chain_type(llm=llm,chain_type="stuff",retriever=retriever)
 summary_question = "What is the main argument of the speech and what is the real remedy suggested?"
 result = qa.invoke(summary_question)
 print(result["result"])
-question = "what is the real enemy according to the speech?"
-result = qa.invoke(question)
-print(result["result"])
+
+def ask():
+   while True:
+    q=input("Please ASK your question or type exit to end....:")
+    if q.lower() in ["exit","quit","bye"]:
+       print("goodbye!!!")
+       break
+
+    result=qa.invoke(q)
+    print("\nAnswer is :","\n")
+    print(result["result"])
+
+
+ask()
