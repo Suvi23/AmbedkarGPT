@@ -4,6 +4,7 @@ This project meets all the technical requirements specified in the assignment.
 
 ## What this repo contains
 - AmbedkarGPT.ipynb — the Google collab notebook
+- Main.py- is the code for interactive CLI Q&A
 - speech.txt — the provided Ambedkar excerpt 
 - requirements.txt — Python dependencies
 - README.md — this file
