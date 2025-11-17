@@ -29,28 +29,31 @@ This project meets all the technical requirements specified in the assignment.
 Follow these steps to run the project locally.
 
 1) Clone the Repository
-
+   
 git clone https://github.com/Suvi23/AmbedkarGPT.git
 cd AmbedkarGPT
 
+3) Create Virtual Environment
 
-2) Create Virtual Environment
-
-# macOS/Linux --->   python3 -m venv venv
+# macOS/Linux --->   
+                    python3 -m venv venv
                     source venv/bin/activate
 
-# Windows (PowerShell)------>     python -m venv venv.\venv\Scripts\Activate.ps1
+# Windows (PowerShell)------>    
 
+                   python -m venv venv.\venv\Scripts\Activate.ps1
 
-
-3) Install Python Dependencies ----> pip install -r requirements.txt
-
+3) Install Python Dependencies ---->
+   
+                   pip install -r requirements.txt
 
 4) Install Ollama (System Installation)
 
-# macOS/Linux/WSL----->> curl -fsSL https://ollama.ai/install.sh | sh
+# macOS/Linux/WSL----->> 
+             curl -fsSL https://ollama.ai/install.sh | sh
 
-# Windows----> Install Ollama from: https://ollama.com/download
+# Windows---->
+            Install Ollama from: https://ollama.com/download
 
 
 5) Download the Required LLM (Mistral 7B)----->> ollama pull mistral
@@ -61,9 +64,7 @@ You should see mistral in the list.
 
 6) Run the Application
 
-Once everything is installed:
-
-python AmbedkarGPT.py
+Once everything is installed:   python AmbedkarGPT.py  OR
 
 # if you wish to run in google collab the direclty run the file -----> AmbedkarGPT.ipynb
 
